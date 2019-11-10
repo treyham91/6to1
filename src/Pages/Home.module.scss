@@ -1,0 +1,57 @@
+.topImage {
+    background-image: url('../static/images/background-main.jpg');
+    background-repeat: 'no-repeat';
+    height: 100%;
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.73);
+}
+
+.aboutUsHeader {
+    text-decoration: underline;
+    color: #777;
+}
+
+.topSection {
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.designsButton {
+    background-image: url('../static/images/top-section.jpg');
+    background-repeat: 'no-repeat';
+    background-size: 600px 700px;
+    background-color: transparent;
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.30);
+    padding: 5px;
+    border: none;
+    transition: 0.2s;
+    font-size: 14px;
+    height: 600px;
+    width: 400px;
+    transition: 0.5s;
+}
+
+.designsButton:focus {
+    outline: 0;
+}
+
+.design {
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.30); 
+    transition: 0.5s;
+}
+
+.design:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.topImage:hover {
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.30);
+    cursor: pointer;
+}

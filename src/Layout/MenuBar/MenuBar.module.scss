@@ -1,0 +1,150 @@
+.menuItemContainer {
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    float: right;
+}
+
+.menuItemContainerScroll {
+    position: absolute;
+    left: 1000px;
+    top: 30px;
+    float: right;
+    display: flex;
+    min-width: 100%;
+}
+
+.menuBarContainer {  
+    align-content: center;
+    max-width: 100%;
+    height: 85px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 10px 10px 10px;
+    transition: 0.7s;
+}
+
+.menuBarContainerScroll {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    align-content: center;
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.30);
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.menuBarItem {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 5px;
+    opacity: .8;
+    transition: 0.2s;
+}
+
+.logoScroll {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 80px; 
+    width: 100px;
+    transition: 0.8s;
+}
+
+.logoScroll:hover {
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    height: 300px; 
+    width: 370px;
+    transition: 0.8s;
+}
+
+.menuBarContainer .menuBarItem:hover {
+    opacity: 1;
+}
+
+.menuBarContainerScroll .menuBarItem:hover {
+    opacity: 1;
+}
+
+.menuBarLogo {
+    position: fixed;
+    top: 12px;
+    left: 10px;
+    opacity: .6;
+}
+
+.logoImage {
+    height: 500px;
+}
+
+.hamburgerMenu {
+    display: block;
+    position: fixed;
+}
+
+.hamburgerMenu > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.menuBarContainer .menuItemContainer {
+    padding: 5px;
+    display: flex;
+}
+
+.menuBarContainerScroll .menuItemContainer {
+    padding: 5px;
+    display: flex;
+    margin-left: 580px;
+}
+
+@media only screen and (max-width: 425px) {
+    .navbar {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .menuBarContainer, .menuBarContainerScroll {
+        margin: 10px 10px 10px 450px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .menuBarContainer, .menuBarContainerScroll {
+        margin: 10px 10px 10px 350px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .menuBarContainer, .menuBarContainerScroll {
+        margin: 10px 10px 10px 250px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .menuBarContainer {
+        visibility: hidden;
+    }
+
+    .menuBarItem {
+        opacity: 0;
+    }
+
+    .hamburgerMenu {
+        visibility: visible;
+    }
+}
