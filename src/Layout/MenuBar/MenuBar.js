@@ -6,6 +6,7 @@ import './menubar.css';
 
 const MenuBar = (props) => {
     const [menubar, setMenubar] = useState("navbar-fixed");
+    const [subMenu, setSubMenu] = useState(false);
 
     useEffect(() => {
         if (window.scrollY > 1) setMenubar("navbar");
@@ -27,6 +28,16 @@ const MenuBar = (props) => {
         })
     })
 
+    const handleMenuClick = () => {
+        if (subMenu) {
+            setSubMenu(false)
+        }
+
+        else {
+            setSubMenu(true)
+        }
+    }
+
     const menuBarItems = [
         { 'key': 1, 'to': '/', 'itemValue': 'Home' },
         { 'key': 2, 'to': '/designs', 'itemValue': 'Designs' },
@@ -37,9 +48,22 @@ const MenuBar = (props) => {
     return (
         <div id={menubar} className="navbar fixed-top">
             <div className="hamburgerMenu">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon" style={{ color: 'black' }}></span>
-                </button>
+                <a
+                    className="btn btn-secondary dropdown-toggle"
+                    style={{ color: 'white' }}
+                    onClick={handleMenuClick}
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu
+                </a>
+                {subMenu ? <div className="dropdown-menu" style={{ display: 'block' }} aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                </div> : null}
             </div>
             <div style={{ display: 'flex', width: '100%' }}>
                 <div>

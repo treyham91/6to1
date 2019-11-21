@@ -17,6 +17,7 @@ class ProjectType(models.Model):
 
 class BaseProject(models.Model):
     customer_name = models.CharField(max_length=100)
+    customer_email = models.EmailField()
     project_type = models.ForeignKey(ProjectType, on_delete=models.CASCADE, related_name='project_type')
     price = models.DecimalField(max_digits=4, decimal_places=2)
     due_date = models.DateTimeField(auto_now=False, null=True)

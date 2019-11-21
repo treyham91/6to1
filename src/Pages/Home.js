@@ -3,6 +3,7 @@ import image1 from '../static/images/1.jpg';
 import fam from '../static/images/fam.jpg';
 import fb from '../static/images/fb_icon.png';
 import ContactForm from '../Components/ContactForm';
+import Media from 'react-media';
 import './home.css';
 
 
@@ -33,14 +34,29 @@ const Home = (props) => {
 
     return (
         <div style={{ width: '100%' }}>
-            <div id="top-container" className="container-fluid">
-                <div id="top-content-container">
-                    <img src={image1} id="top-container-image" alt="Wood Design" />
-                    <div style={{ marginLeft: 10 }}>
-                        <p id="top-cotainer-header">Custom Designs</p>
-                        <p id="top-container-content">Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it.</p>
-                    </div>
-                </div>
+            <div id="top-container">
+                <Media query="(max-width: 1130px)">
+                    {matches =>
+                        matches ?
+                            <div style={{ width: '100%', padding: '120px 380px 0px 300px', display: 'block' }}>
+                                <img src={image1} id="top-container-image2" alt="Wood Design" />
+                                <p id="top-container-content3">
+                                    Whether you're looking to add a new table to your dining room,
+                                    or replace the old chairs in your kitchen,
+                                    everything will be made the way you want it.
+                            </p>
+                            </div>
+                            :
+                            <div style={{ width: '100%', padding: 200 }}>
+                                <p id="top-container-content">
+                                    <img src={image1} id="top-container-image" alt="Wood Design" />
+                                    Whether you're looking to add a new table to your dining room,
+                                    or replace the old chairs in your kitchen,
+                                    everything will be made the way you want it.
+                        </p>
+                            </div>
+                    }
+                </Media>
             </div>
             <div id="second-container" className="container-fluid">
                 <div id="second-container-header">
@@ -49,7 +65,10 @@ const Home = (props) => {
                 </div>
                 <div id="second-container-content">
                     <img src={image1} id="second-container-image" alt="Wood Design" />
-                    <p id="second-container-content-body">Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it.</p>
+                    {/* <p id="second-container-content-body">
+                        Whether you're looking to add a new table to your dining room,
+                        or replace the old chairs in your kitchen,
+                    everything will be made the way you want it.</p> */}
                 </div>
             </div>
             <div id="third-container" className="container-fluid">

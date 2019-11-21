@@ -85,6 +85,13 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+
 ROOT_URLCONF = 'six_to_one_django.urls'
 
 TEMPLATES = [

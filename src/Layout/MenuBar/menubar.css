@@ -93,16 +93,11 @@
 }
 
 .hamburgerMenu {
-    display: block;
-    position: fixed;
-    padding-top: 15px;
-}
-
-.hamburgerMenu > div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+    display: none;
+    padding: 5px;
+    margin: 15px;
+    width: 100%;
+    text-align: right;
 }
 
 .menuBarContainer .menuItemContainer {
@@ -114,6 +109,17 @@
     padding: 5px;
     display: flex;
     margin-left: 580px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    top: none;
+    right: 0px;
+    float: none;
+    max-width: none;
 }
 
 #navbar {
@@ -128,25 +134,25 @@
     background-color: transparent;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1610px) {
     .menuItemContainerScroll {
         margin-left: 45%;
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
     .menuItemContainerScroll {
         margin-left: 40%;
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1360px) {
     .menuItemContainerScroll {
         margin-left: 35%;
     }
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1260px) {
     .menuItemContainerScroll {
         margin-left: 30%;
         padding: 4px;
@@ -156,13 +162,16 @@
 @media only screen and (max-width: 1170px) {
     .menuItemContainerScroll {
         margin-left: 25%;
-        padding: 1px;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
     .menuItemContainerScroll {
         display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
     }
 }
 
@@ -204,7 +213,7 @@
     }
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1720px) {
     .logo {
         position: absolute;
         left: 30px;
@@ -215,7 +224,7 @@
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1490px) {
     .logo {
         position: absolute;
         left: 20px;

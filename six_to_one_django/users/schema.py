@@ -1,11 +1,19 @@
 import re
+import datetime
 from django.contrib.auth import get_user_model
 from django.core.validators import validate_email
+from django.core.mail import send_mail
 import graphene
 from graphene_django import DjangoObjectType
 from graphql import GraphQLError
 
 # TODO: Add: disable user, enable user
+
+
+def send_error_message(file_path, message):
+    with open(file_path, 'w') as file:
+        file.writelines(message)
+    file.close()
 
 
 class UserType(DjangoObjectType):
@@ -70,6 +78,16 @@ class CreateUser(graphene.Mutation):
                     password):
                 user.set_password(password)
                 user.save()
+                try:
+                    send_mail(
+                        subject='New Account has been Registered on Six-To-One',
+                        message='New user has been created for {} {}'.format(first_name, last_name),
+                        from_email='sender@six-to-one.com',
+                        recipient_list=[email],
+                    )
+
+                except Exception as e:
+                    send_error_message('six_to_one_django/error_logs.txt', '{} {}'.format(e.__str__(), datetime.datetime))
             else:
                 raise GraphQLError(
                     'Password does not meet security requirements')

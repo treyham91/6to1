@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../Pages/home.css';
+import MessageCounter from './MessageCounter';
 
 const ContactForm = (props) => {
     const [firstName, setFirstName] = useState("");
@@ -40,7 +41,10 @@ const ContactForm = (props) => {
                     <div className="table-row">
                         <div className="contact-form-table-cell">
                             <label>Message:</label><br />
-                            <textarea id="message-text-area" className="form-input" name="message" value={message} onChange={event => setMessage(event.target.value)}></textarea>
+                            <MessageCounter message={message} />
+                            {message.length === 200 ?
+                                <textarea id="message-text-area" className="form-input" name="message" value={message}></textarea>
+                                : <textarea id="message-text-area" className="form-input" name="message" value={message} onChange={event => setMessage(event.target.value)}></textarea>}
                         </div>
                         <div className="contact-form-table-cell">
                             <label></label><br />
