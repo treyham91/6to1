@@ -48,21 +48,17 @@ const MenuBar = (props) => {
     return (
         <div id={menubar} className="navbar fixed-top">
             <div className="hamburgerMenu">
-                <a
-                    className="btn btn-secondary dropdown-toggle"
-                    style={{ color: 'white' }}
-                    onClick={handleMenuClick}
-                    role="button"
-                    id="dropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false">
-                    Menu
-                </a>
+                <div className={subMenu ? "change" + " menu-container" : "menu-container"} onClick={handleMenuClick}>
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
                 {subMenu ? <div className="dropdown-menu" style={{ display: 'block' }} aria-labelledby="dropdownMenuLink">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
+                    {menuBarItems.map(item => {
+                        return (
+                            <a key={item.key} className="dropdown-item" href="#">{item.itemValue}</a>
+                        )
+                    })}
                 </div> : null}
             </div>
             <div style={{ display: 'flex', width: '100%' }}>

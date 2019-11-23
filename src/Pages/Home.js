@@ -13,14 +13,16 @@ const Home = (props) => {
         "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it." +
         "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it." +
         "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it." +
-        "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it." +
-        "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it." +
         "Whether you're looking to add a new table to your dining room, or replace the old chairs in your kitchen, everything will be made the way you want it."
     )
 
     const adjustContent = () => {
         if (window.innerWidth < 1045 && window.innerWidth > 910) {
             setTheBehindTheName(behindTheName.slice(0, 100).concat("..."))
+        }
+
+        else if (window.innerWidth < 500) {
+            setTheBehindTheName(behindTheName.slice(0, 200).concat("..."))
         }
 
         else {
@@ -38,7 +40,7 @@ const Home = (props) => {
                 <Media query="(max-width: 1130px)">
                     {matches =>
                         matches ?
-                            <div style={{ width: '100%', padding: '120px 380px 0px 300px', display: 'block' }}>
+                            <div style={{ width: '100%', padding: '200px 20px 0px 20px', display: 'block' }}>
                                 <img src={image1} id="top-container-image2" alt="Wood Design" />
                                 <p id="top-container-content3">
                                     Whether you're looking to add a new table to your dining room,
@@ -64,19 +66,21 @@ const Home = (props) => {
                     <h1 className="second-container-header-text">Your Way</h1>
                 </div>
                 <div id="second-container-content">
-                    <img src={image1} id="second-container-image" alt="Wood Design" />
-                    {/* <p id="second-container-content-body">
-                        Whether you're looking to add a new table to your dining room,
-                        or replace the old chairs in your kitchen,
-                    everything will be made the way you want it.</p> */}
+                    <figure id="second-container-image">
+                        <img src={image1} id="second-image" alt="Wood Design" />
+                        <figcaption id="second-image-caption">
+                            Whether you're looking to add a new table to your dining room,
+                            or replace the old chairs in your kitchen,
+                        everything will be made the way you want it</figcaption>
+                    </figure>
                 </div>
             </div>
             <div id="third-container" className="container-fluid">
-                <img src={fam} id="third-container-image" alt="Wood Design" />
-                <p id="third-container-header">Behind the Name</p>
-                <p id="third-container-content">
-                    {behindTheName}
-                </p>
+                <figure>
+                    <img src={fam} id="third-container-image" alt="Wood Design" />
+                    <figcaption id="third-container-header">Behind the Name</figcaption>
+                    <figcaption id="third-container-content">{behindTheName}</figcaption>
+                </figure>
             </div>
             <div id="contact-container" className="container-fluid">
                 <h1 id="contact-container-header">Start You Project Today</h1>
