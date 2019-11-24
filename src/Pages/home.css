@@ -17,7 +17,7 @@
 }
 
 #third-container {
-    padding: 150px;
+    padding: 120px 150px 150px 150px;
     height: 1000px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -37,7 +37,7 @@
 #contact-form-button {
     background-color: hsla(0,100%,0%,0.4);
     color: white;
-    border: none;
+    border: 1px solid hsla(0,100%,0%,0.4);
     width: 150px;
     padding: 10px;
 }
@@ -45,7 +45,7 @@
 #contact-form-button:hover {
     opacity: 0.8;
     transition: 0.3s;
-    box-shadow: 0px 13px 37px -17px rgba(0,0,0,0.75);
+    border: 1px solid white;
 }
 
 #contact-form-button:focus {
@@ -145,12 +145,13 @@
 }
 
 #third-container-header {
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bold;
 }
 
-#third-container-content {
+.third-container-content {
     font-size: 14px;
+    text-transform: none;
 }
 
 #contact-container-header {
@@ -170,7 +171,6 @@
 
 #contact-form-container {
     max-width: 1000px;
-    min-width: 300px; 
     height: 550px;
     background-color: hsla(0,100%,0%,0.1); 
     margin: auto;
@@ -178,9 +178,10 @@
 }
 
 #contact-form {
-    padding: 80px 120px 120px 120px; 
     height: 100%; 
     text-align: left;
+    width: 700px;
+    margin: auto;
 }
 
 #message-text-area {
@@ -211,16 +212,6 @@
     padding: 10px 10px 10px 70px;
 }
 
-.table-row {
-    display: table-row;
-}
-
-@media screen and (max-width: 1765px) {
-    #third-container {
-        padding: 150px;
-    }
-}
-
 @media screen and (max-width: 1545px) {
     #third-container {
         padding: 100px;
@@ -234,27 +225,6 @@
     }
 }
 
-
-@media screen and (max-width: 1070px) {
-    #contact-form {
-        padding-left: 80px;
-    }
-}
-
-@media screen and (max-width: 1045px) {
-    #third-container-image {
-        width: 100%;
-        height: 500px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #contact-form {
-        padding-left: 60px;
-    }
-}
-
-
 @media screen and (max-width: 970px) {
 
     #top-cotainer-header {
@@ -266,20 +236,6 @@
         margin-left: 100px;
     }
 }
-
-@media screen and (max-width: 960px) {
-    #contact-form {
-        padding-left: 40px;
-    }
-}
-
-@media screen and (max-width: 925px) {
-    #contact-form {
-        padding-left: 20px;
-    }
-}
-
-
 
 @media screen and (max-width: 920px) {
 
@@ -293,16 +249,11 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 910px) {
-    #third-container-content {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .contact-form-table-cell {
         padding: 0px;
         display: block;
+        width: 100%;
     }
 
     .form-input {
@@ -319,11 +270,13 @@
     }
 
     #contact-form {
-        padding: 20px 20px 120px 0px;
+        padding: 5px;
+        width: 100%;
     }
 
     .table-row {
         display: block;
+        width: 100%;
     }
 
     #contact-container-header {
@@ -363,12 +316,20 @@
     }
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 585px) {
     #contact-container-header {
         font-size: 60px;
         padding-top: 40px;
     }
 }
+
+@media screen and (max-width:710px) {
+    #third-container-image {
+        width: 100%;
+    }
+}
+
+
 
 @media screen and (max-width: 640px) {
 
@@ -379,15 +340,7 @@
     #top-cotainer-header {
         display: none;
     }
-}
 
-@media screen and (max-width: 595px) {
-    #third-container-header {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 500px) {
     #third-container {
         padding: 150px 0px 0px 0px;
     }
@@ -401,8 +354,11 @@
     }
 }
 
+@media screen and (max-width: 510px) {
+}
+
 @media (min-width: 640px) and (max-width: 500px) {
-    #third-container-content {
+    .third-container-content {
         display: block;
     }
 }
@@ -413,6 +369,20 @@
     }
 }
 
+@media screen and (max-width: 475px) {
+    #third-container {
+        padding: 0px;
+    }
+
+    #third-container-image {
+        height: 300px;
+    }
+
+    #third-container-header {
+        font-size: 35px;
+    }
+}
+
 @media screen and (max-width: 385px) {
     #form-background {
         padding: 5px;
@@ -420,6 +390,12 @@
 
     #second-image-caption {
         padding: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #third-container-header {
+        font-size: 25px;
     }
 }
 
