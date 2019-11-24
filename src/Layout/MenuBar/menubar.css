@@ -118,10 +118,15 @@
 .dropdown-menu {
     top: 70px;
     float: none;
-    max-width: none;
+    max-width: 0px;
     z-index: 1;
     position: relative;
     float: right;
+    background-color:  hsla(0,100%,0%,0.6);
+}
+
+.dropdown-item {
+    color: white;
 }
 
 .menu-container {

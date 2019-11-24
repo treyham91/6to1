@@ -40,7 +40,7 @@ const MenuBar = (props) => {
 
     const menuBarItems = [
         { 'key': 1, 'to': '/', 'itemValue': 'Home' },
-        { 'key': 2, 'to': '/designs', 'itemValue': 'Designs' },
+        { 'key': 2, 'to': '/projects', 'itemValue': 'Projects' },
         { 'key': 3, 'to': '/about', 'itemValue': 'About' },
         { 'key': 4, 'to': '/contact', 'itemValue': 'Contact' },
     ]

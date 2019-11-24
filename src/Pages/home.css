@@ -212,9 +212,19 @@
     padding: 10px 10px 10px 70px;
 }
 
+@media screen and (max-width: 2000px) {
+    #form-background {
+        margin-top: 120px;
+    }
+}
+
 @media screen and (max-width: 1545px) {
     #third-container {
         padding: 100px;
+    }
+
+    #contact-container-header {
+        padding-top: 10px;
     }
 }
 
@@ -280,7 +290,8 @@
     }
 
     #contact-container-header {
-        padding-top: 60px;
+        padding-top: 0px;
+        font-size: 65px;
     }
 
     #form-background {
@@ -318,7 +329,7 @@
 
 @media screen and (max-width: 585px) {
     #contact-container-header {
-        font-size: 60px;
+        font-size: 50px;
         padding-top: 40px;
     }
 }

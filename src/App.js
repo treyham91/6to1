@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <AppRoute exact path="/" layout={Main} component={Home} />
-      <AppRoute path="/designs" layout={Main} component={Designs} />
+      <AppRoute path="/projects" layout={Main} component={Designs} />
       {/* <AppRoute path="/about" layout={Main} component={About} /> */}
       <AppRoute path="/contact" layout={Main} component={Contact} />
       <AppRoute path="/dashboard" layout={DashboardMain} component={Dashboard} />

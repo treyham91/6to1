@@ -42,9 +42,13 @@ const ContactForm = (props) => {
                         <div className="contact-form-table-cell">
                             <label>Message:</label><br />
                             <MessageCounter message={message} />
-                            {message.length === 200 ?
-                                <textarea id="message-text-area" className="form-input" name="message" value={message}></textarea>
-                                : <textarea id="message-text-area" className="form-input" name="message" value={message} onChange={event => setMessage(event.target.value)}></textarea>}
+                            <textarea
+                                id="message-text-area"
+                                maxLength="200"
+                                className="form-input"
+                                name="message"
+                                value={message}
+                                onChange={event => setMessage(event.target.value)}></textarea>
                         </div>
                         <div className="contact-form-table-cell">
                             <label></label><br />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import image1 from '../static/images/1.jpg';
 import fam from '../static/images/fam.jpg';
 import fb from '../static/images/fb_icon.png';
+import logo from '../static/images/6to1_wood.png';
 import ContactForm from '../Components/ContactForm';
 import Media from 'react-media';
 import './home.css';
@@ -85,7 +86,7 @@ const Home = (props) => {
                     <figcaption id="third-container-header">Behind the Name</figcaption>
                     <figcaption className="third-container-content">{behindTheName[0]}</figcaption><br />
                     <figcaption className="third-container-content">{behindTheName[1]}</figcaption><br />
-                    <figcaption id="bottom-text" style={{ fontWeight: 'bold', backgroundColor: 'hsl(0, 0%, 90%)', borderRadius: 4, padding: 10 }} className="third-container-content">{behindTheName[2]}</figcaption>
+                    <figcaption id="bottom-text" style={{ backgroundColor: 'hsl(0, 0%, 90%)', borderRadius: 4, padding: 10 }} className="third-container-content">{behindTheName[2]}</figcaption>
                 </figure>
             </div>
             <div id="contact-container" className="container-fluid">
@@ -99,6 +100,10 @@ const Home = (props) => {
                         <a href="https://www.facebook.com">
                                 <img id="footer-icon" src={fb} atl="Cannot be displayed" />
                             </a>
+                        </p>
+                        <p style={{ color: 'white', fontSize: 8, marginTop: 100 }}>
+                            Published on November 24, 2019
+                            <img style={{ height: 20, width: 20, marginLeft: 10 }} src={logo} atl="Cannot be displayed" />
                         </p>
                     </div>
                 </div>
