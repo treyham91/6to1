@@ -1,0 +1,52 @@
+#navbar-side-container {
+    min-width: 300px;
+    border-right: 1px solid lightgray;
+    height: 100%;
+}
+
+#navbar-side-item-container {
+    list-style: none;
+    text-align: left;
+}
+
+#dashboard-header-container {
+    max-width: 300px;
+    margin: 10px;
+}
+
+#create-project {
+    float: right;
+    text-transform: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: #2e79a5;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#create-project:hover {
+    box-shadow: 0 8px 6px -6px black;
+    transition: 0.3s;
+}
+
+#logout-link {
+    margin: 15px 15px 15px 0px;
+}
+
+#logout-link:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.navbar-side-item {
+    text-transform: none;
+    margin: 15px;
+    opacity: 0.8;
+}
+
+.navbar-side-item:hover {
+    cursor: pointer;
+    opacity: 1;
+}

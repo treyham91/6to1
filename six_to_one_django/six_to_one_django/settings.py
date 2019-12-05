@@ -52,14 +52,14 @@ INSTALLED_APPS = [
 GRAPHENE = {
     'SCHEMA': 'six_to_one_django.schema.schema',
     'MIDDLEWARE': [
-            'graphql_jwt.middleware.JSONWebTokenMiddleware',
-        ],
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ],
 }
 
 GRAPHQL_JWT = {
     'JWT_VERIFY_EXPIRATION': True,
     'JWT_LONG_RUNNING_REFRESH_TOKEN': True,
-    'JWT_EXPIRATION_DELTA': timedelta(minutes=5),
+    'JWT_EXPIRATION_DELTA': timedelta(minutes=200),
     'JWT_REFRESH_EXPIRATION_DELTA': timedelta(days=10),
 }
 
@@ -97,8 +97,7 @@ ROOT_URLCONF = 'six_to_one_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

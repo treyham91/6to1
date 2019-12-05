@@ -61,12 +61,47 @@ class CreateProject(graphene.Mutation):
                 project.save()
             except Exception as e:
                 with open('project_logs.txt', 'w') as file:
-                    file.write('{} {}'.format(e.__str__(), datetime.datetime.now()))
+                    file.write('{} {}'.format(
+                        e.__str__(), datetime.datetime.now()))
                 file.close()
                 raise GraphQLError('Error. Could not save project to database. Please refer to the error'
                                    'log files for further information regarding this issue.')
 
         return CreateProject(project=project)
+
+
+class UpdateProject(graphene.Mutation):
+    project = graphene.Field(ProjectType)
+
+    class Arguments:
+        customer_name = graphene.String(required=True)
+        customer_email = graphene.String(required=True)
+        project_type = graphene.Int(required=True)
+        price = graphene.Decimal(required=False)
+        due_date = graphene.DateTime(required=False)
+        paid_status = graphene.Boolean(required=True)
+        start_date = graphene.DateTime(required=False)
+        end_date = graphene.DateTime(required=False)
+
+    def mutate(self, info, customer_name, customer_email, project_type, price, due_date, paid_status,
+               start_date, end_date):
+
+        user = info.context.user
+        if user.is_anonymous:
+            raise GraphQLError('No user found')
+        else:
+            project = BaseProject.objects.get(id=project_id)
+            project.customer_name = customer_name
+            project.customer_email = customer_email
+            project.project_type = project_type
+            project.price = price
+            project.due_date = due_date
+            project.paid_status = paid_status
+            project.start_date = start_date
+            project.end_date = end_date
+            project.save()
+
+        return UpdateProject(project=project)
 
 
 class DeleteProject(graphene.Mutation):
