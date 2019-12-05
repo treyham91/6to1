@@ -32,7 +32,7 @@
 }
 
 #logout-link {
-    margin: 15px 15px 15px 0px;
+    margin: 5px 15px 15px 15px;
 }
 
 #logout-link:hover {
@@ -49,4 +49,13 @@
 .navbar-side-item:hover {
     cursor: pointer;
     opacity: 1;
+}
+
+.dashboard-modal {
+    border: 1px solid gray;
+    border-radius: 4px; 
+    background-color: white; 
+    text-transform: none; 
+    padding: 10px; 
+    text-align: left;
 }
