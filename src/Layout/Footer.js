@@ -1,19 +1,21 @@
 import React from 'react';
+import { Icon } from 'antd';
+import logo from '../static/images/6to1_wood.png'
+import '../Pages/home.css'
 
 
 const Footer = (props) => {
     return (
-        <div style={{ height: 300, width: '100%', backgroundColor: 'grey', textAlign: 'left', position: 'absolute', bottom: 0 }}>
-            <div>
-                <ul style={{ listStyle: 'none' }}>
-                    <li><a href="#" style={{ textDecoration: 'none', color: 'white' }}>FAQ</a></li>
-                    <li><a href="#" style={{ textDecoration: 'none', color: 'white' }}>Connect with us</a></li>
-                    <li><a href="#" style={{ textDecoration: 'none', color: 'white' }}>Contact</a></li>
-                    <li><a href="#" style={{ textDecoration: 'none', color: 'white' }}>Terms of Service</a></li>
-                </ul>
-            </div>
-            <div style={{ textAlign: 'left' }}>
-                <p>Six-To-One Designs LLC</p>
+        <div className="footer">
+            <div style={{ display: 'flex' }}>
+                <div style={{ margin: 'auto' }}>
+                    <Icon target="_blank" onClick={() => window.location.href = "https://www.instagram.com/6to1designs/"} className="social-icon" type="instagram" />
+                    <Icon target="_blank" onClick={() => window.location.href = "https://www.facebook.com/pg/6to1designs"} className="social-icon" type="facebook" />
+                    <p style={{ color: 'white', fontSize: 8, marginTop: 100 }}>
+                        Published on November 24, 2019
+                            <img style={{ height: 20, width: 20, marginLeft: 10 }} src={logo} atl="Cannot be displayed" />
+                    </p>
+                </div>
             </div>
         </div>
     )

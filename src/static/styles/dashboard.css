@@ -44,11 +44,18 @@
     text-transform: none;
     margin: 15px;
     opacity: 0.8;
+    color: black;
 }
 
 .navbar-side-item:hover {
     cursor: pointer;
     opacity: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-side-item:focus {
+    color: black;
 }
 
 .dashboard-modal {

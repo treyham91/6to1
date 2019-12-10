@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { UncontrolledCollapse } from 'reactstrap';
 import { Icon } from 'antd';
+import { Link } from 'react-router-dom';
 import '../../../static/styles/dashboard.css';
 
 
@@ -20,9 +21,9 @@ const DropdownMenuItem = (props) => {
 
     return (
         <div>
-            <li onClick={handleClick} id="toggler" className="navbar-side-item">
+            <li onClick={handleClick} id="toggler">
                 <Icon style={{ margin: 10 }} type={props.iconType} />
-                {props.value}
+                <Link className="navbar-side-item" to={props.toLink}>{props.value}</Link>
                 <Icon style={{ marginLeft: 15 }} type={icon} />
             </li>
             <UncontrolledCollapse toggler="#toggler">

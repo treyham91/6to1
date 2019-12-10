@@ -1,6 +1,7 @@
 import React from 'react';
 import DropdownMenuItem from './DropdownMenuItem';
 import { Icon } from 'antd';
+import { Link, useRouteMatch } from 'react-router-dom';
 import '../../../static/styles/dashboard.css';
 
 //apollo middleware 
@@ -25,6 +26,7 @@ const projectItems = [
 
 
 const SideMenubar = (props) => {
+    let match = useRouteMatch();
 
     return (
         <Query query={ME_QUERY}>
@@ -39,11 +41,13 @@ const SideMenubar = (props) => {
                 return (
                     <div id="navbar-side-container">
                         <ul id="navbar-side-item-container">
-                            <DropdownMenuItem iconType="build" value="Projects" subMenuItems={projectItems} />
-                            <li className="navbar-side-item">
-                                <Icon style={{ margin: 10 }} type="mail" />Messages</li>
-                            <li className="navbar-side-item">
-                                <Icon style={{ margin: 10 }} type="setting" />Site Management</li>
+                            <DropdownMenuItem toLink={""} iconType="build" value="Projects" subMenuItems={projectItems} />
+                            <li>
+                                <Icon style={{ margin: 10 }} type="mail" />
+                                <Link className="navbar-side-item" to="/messages">Messages</Link></li>
+                            <li>
+                                <Icon style={{ margin: 10 }} type="setting" />
+                                <Link className="navbar-side-item" to={`${match.url}/site-management`}>Site Management</Link></li>
                         </ul>
                     </div>
                 )

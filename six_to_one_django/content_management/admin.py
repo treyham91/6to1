@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import ProjectPost, PostImage, PostType, DeletedPosts
 
-# Register your models here.
+admin.site.register(ProjectPost)
+admin.site.register(PostImage)
+admin.site.register(PostType)
+admin.site.register(DeletedPosts)

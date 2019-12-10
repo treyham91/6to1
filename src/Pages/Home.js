@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import image1 from '../static/images/1.jpg';
 import fam from '../static/images/fam.jpg';
-import fb from '../static/images/fb_icon.png';
-import logo from '../static/images/6to1_wood.png';
 import ContactForm from '../Components/ContactForm';
 import Media from 'react-media';
 import './home.css';
@@ -92,21 +90,6 @@ const Home = (props) => {
             <div id="contact-container" className="container-fluid">
                 <h1 id="contact-container-header">Start You Project Today</h1>
                 <ContactForm />
-            </div>
-            <div className="footer">
-                <div style={{ display: 'flex' }}>
-                    <div style={{ margin: 'auto' }}>
-                        <p style={{ marginTop: 30, fontSize: 20, color: 'black' }}>Check us out on
-                        <a href="https://www.facebook.com">
-                                <img id="footer-icon" src={fb} atl="Cannot be displayed" />
-                            </a>
-                        </p>
-                        <p style={{ color: 'white', fontSize: 8, marginTop: 100 }}>
-                            Published on November 24, 2019
-                            <img style={{ height: 20, width: 20, marginLeft: 10 }} src={logo} atl="Cannot be displayed" />
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     )

@@ -94,6 +94,11 @@ EMAIL_HOST_PASSWORD = 'SG.rls1bgukTouBv4VNDTJwlQ.ZgRaMLs6HRvNNxUdwu5arua83MruqHJ
 
 ROOT_URLCONF = 'six_to_one_django.urls'
 
+FILE_UPLOAD_HANDLERS = [
+    "django.core.files.uploadhandler.MemoryFileUploadHandler",
+    "django.core.files.uploadhandler.TemporaryFileUploadHandler"
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

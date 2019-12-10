@@ -212,6 +212,16 @@
     padding: 10px 10px 10px 70px;
 }
 
+.social-icon {
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(27, 27, 27);
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 2000px) {
     #form-background {
         margin-top: 120px;
