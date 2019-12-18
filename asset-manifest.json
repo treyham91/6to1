@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/6to1/static/css/main.088ffe5a.chunk.css",
+    "main.js": "/6to1/static/js/main.312522a9.chunk.js",
+    "main.js.map": "/6to1/static/js/main.312522a9.chunk.js.map",
+    "runtime~main.js": "/6to1/static/js/runtime~main.1ae50515.js",
+    "runtime~main.js.map": "/6to1/static/js/runtime~main.1ae50515.js.map",
+    "static/js/2.5f0aecf6.chunk.js": "/6to1/static/js/2.5f0aecf6.chunk.js",
+    "static/js/2.5f0aecf6.chunk.js.map": "/6to1/static/js/2.5f0aecf6.chunk.js.map",
+    "index.html": "/6to1/index.html",
+    "precache-manifest.1ff3df18608a854b3823b1f86404da0b.js": "/6to1/precache-manifest.1ff3df18608a854b3823b1f86404da0b.js",
+    "service-worker.js": "/6to1/service-worker.js",
+    "static/css/main.088ffe5a.chunk.css.map": "/6to1/static/css/main.088ffe5a.chunk.css.map",
+    "static/media/1.jpg": "/6to1/static/media/1.34037a1a.jpg",
+    "static/media/home.css": "/6to1/static/media/4_practice.dab5c14b.jpg",
+    "static/media/designs.css": "/6to1/static/media/wood-background.6ccd5e93.jpg",
+    "static/media/6to1_wood.png": "/6to1/static/media/6to1_wood.510cb6eb.png",
+    "static/media/BRANDER.jpg": "/6to1/static/media/BRANDER.2afbe953.jpg",
+    "static/media/fam.jpg": "/6to1/static/media/fam.f68a73ab.jpg"
+  }
+}
