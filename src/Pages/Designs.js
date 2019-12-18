@@ -10,7 +10,16 @@ const Designs = (props) => {
             <div id="top-design-container">
                 <h1>Recent Projects</h1>
                 <div style={{ borderTop: '10px solid hsla(0,100%,0%,0.1)', borderBottom: '10px solid hsla(0,100%,0%,0.1)', width: '100%', height: 700, padding: 50 }}>
-                    <div style={{ backgroundColor: 'grey', height: '100%' }}></div>
+                    <div id="main-grid">
+                        <div style={{ gridRow: '1/3', gridColumn: '1/3' }} className="main-grid-item"></div>
+                        <div style={{ gridRow: '1/4', gridColumn: '3/6' }} className="main-grid-item"></div>
+                        <div style={{ gridRow: '3/6', gridColumn: '1/3' }} className="main-grid-item"></div>
+                        <div style={{ gridRow: '4/6', gridColumn: '3/6' }} className="main-grid-item"></div>
+                        {/* <div style={{ gridRow: '5/6', gridColumn: '1/3' }} className="main-grid-item"></div> */}
+                        {/* <div style={{ gridRow: '3/5', gridColumn: '3/6' }} className="main-grid-item"></div> */}
+                        {/* <div style={{ gridRow: '4/5', gridColumn: '1/3' }} className="main-grid-item"></div> */}
+                        {/* <div style={{ gridRow: '1/4', gridColumn: '3/6' }} className="main-grid-item"></div> */}
+                    </div>
                 </div>
             </div>
             <div style={{ marginTop: 500 }}>

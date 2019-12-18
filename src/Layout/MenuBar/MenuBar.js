@@ -63,7 +63,7 @@ const MenuBar = (props) => {
             </div>
             <div style={{ display: 'flex', width: '100%' }}>
                 <div>
-                    <img className={menubar === "navbar" ? "logoScroll" : "logo"} src={logo} alt="Cannot be displayed" />
+                    <img className="logoScroll" src={logo} alt="Cannot be displayed" />
                 </div>
                 <div className="menuItemContainerScroll">
                     {menuBarItems.map(item => {

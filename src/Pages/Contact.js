@@ -20,30 +20,30 @@ const Contact = (props) => {
                 <div>
                     <form onSubmit={submitForm} id="contact-form">
                         <legend style={{ textAlign: 'center', display: 'table' }}>Contact<br />
-                            <span style={{ fontSize: 12 }}>Have something you want us to design? Send us a quick message.</span></legend>
+                            <span style={{ fontSize: 12 }}>Have a design in mind? Send us a quick message.</span></legend>
                         <div className="table-row">
                             <div className="contact-form-table-cell">
-                                <label>First Name:</label><br />
+                                <label>First Name</label><br />
                                 <input className="form-input" type="text" name="first" value={firstName} onChange={event => setFirstName(event.target.value)}></input>
                             </div>
                             <div className="contact-form-table-cell">
-                                <label>Last Name:</label><br />
+                                <label>Last Name</label><br />
                                 <input className="form-input" type="text" name="last" value={lastName} onChange={event => setLastName(event.target.value)}></input>
                             </div>
                         </div>
                         <div className="table-row">
                             <div className="contact-form-table-cell">
-                                <label>Phone Number:</label><br />
+                                <label>Phone Number</label><br />
                                 <input className="form-input" type="text" name="number" value={number} onChange={event => setNumber(event.target.value)}></input>
                             </div>
                             <div className="contact-form-table-cell">
-                                <label>Email:</label><br />
+                                <label>Email</label><br />
                                 <input className="form-input" type="text" name="email" value={email} onChange={event => setEmail(event.target.value)}></input><br />
                             </div>
                         </div>
                         <div className="table-row">
                             <div className="contact-form-table-cell">
-                                <label>Message:</label><br />
+                                <label>Message</label><br />
                                 <MessageCounter message={message} />
                                 <textarea
                                     id="message-text-area"

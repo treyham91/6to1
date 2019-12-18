@@ -45,6 +45,7 @@ const Home = (props) => {
                         matches ?
                             <div style={{ width: '100%', padding: '200px 20px 0px 20px', display: 'block' }}>
                                 <img src={image1} id="top-container-image2" alt="Wood Design" />
+                                <h3 id="top-container-header">Custom Designs</h3>
                                 <p id="top-container-content3">
                                     Whether you're looking to add a new table to your dining room,
                                     or replace the old chairs in your kitchen,
@@ -52,9 +53,10 @@ const Home = (props) => {
                             </p>
                             </div>
                             :
-                            <div style={{ width: '100%', padding: 200 }}>
-                                <p id="top-container-content">
+                            <div style={{ padding: '200px 0px 100px 100px' }}>
+                                <p style={{ maxWidth: 1500 }} id="top-container-content">
                                     <img src={image1} id="top-container-image" alt="Wood Design" />
+                                    <h3 id="top-container-header">Custom Designs</h3>
                                     Whether you're looking to add a new table to your dining room,
                                     or replace the old chairs in your kitchen,
                                     everything will be made the way you want it.
