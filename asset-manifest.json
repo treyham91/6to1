@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/6to1/static/css/main.81d2cc17.chunk.css",
+    "main.css": "/6to1/static/css/main.02e52156.chunk.css",
     "main.js": "/6to1/static/js/main.edc8ee11.chunk.js",
     "main.js.map": "/6to1/static/js/main.edc8ee11.chunk.js.map",
     "runtime~main.js": "/6to1/static/js/runtime~main.1ae50515.js",
@@ -8,9 +8,9 @@
     "static/js/2.7965e619.chunk.js": "/6to1/static/js/2.7965e619.chunk.js",
     "static/js/2.7965e619.chunk.js.map": "/6to1/static/js/2.7965e619.chunk.js.map",
     "index.html": "/6to1/index.html",
-    "precache-manifest.36c849fad7d1b17d063b27ed4ffaf3c1.js": "/6to1/precache-manifest.36c849fad7d1b17d063b27ed4ffaf3c1.js",
+    "precache-manifest.8e0f0502c7cf502e746794b12cc6f9d0.js": "/6to1/precache-manifest.8e0f0502c7cf502e746794b12cc6f9d0.js",
     "service-worker.js": "/6to1/service-worker.js",
-    "static/css/main.81d2cc17.chunk.css.map": "/6to1/static/css/main.81d2cc17.chunk.css.map",
+    "static/css/main.02e52156.chunk.css.map": "/6to1/static/css/main.02e52156.chunk.css.map",
     "static/media/1.jpg": "/6to1/static/media/1.34037a1a.jpg",
     "static/media/home.css": "/6to1/static/media/4_practice.dab5c14b.jpg",
     "static/media/designs.css": "/6to1/static/media/wood-background.6ccd5e93.jpg",
