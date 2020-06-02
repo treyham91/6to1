@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.fefa8bee.chunk.css",
-    "main.js": "/static/js/main.2771f710.chunk.js",
-    "main.js.map": "/static/js/main.2771f710.chunk.js.map",
+    "main.css": "/static/css/main.51d615ec.chunk.css",
+    "main.js": "/static/js/main.f392ceaa.chunk.js",
+    "main.js.map": "/static/js/main.f392ceaa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b18c23f4.js",
     "runtime-main.js.map": "/static/js/runtime-main.b18c23f4.js.map",
-    "static/js/2.af4c8501.chunk.js": "/static/js/2.af4c8501.chunk.js",
-    "static/js/2.af4c8501.chunk.js.map": "/static/js/2.af4c8501.chunk.js.map",
+    "static/js/2.b9445453.chunk.js": "/static/js/2.b9445453.chunk.js",
+    "static/js/2.b9445453.chunk.js.map": "/static/js/2.b9445453.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.90bb3ffb3607ca8721217fd41905cb31.js": "/precache-manifest.90bb3ffb3607ca8721217fd41905cb31.js",
+    "precache-manifest.504646f650ea2162d79a82c5e6a6128b.js": "/precache-manifest.504646f650ea2162d79a82c5e6a6128b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.fefa8bee.chunk.css.map": "/static/css/main.fefa8bee.chunk.css.map",
-    "static/js/2.af4c8501.chunk.js.LICENSE.txt": "/static/js/2.af4c8501.chunk.js.LICENSE.txt",
+    "static/css/main.51d615ec.chunk.css.map": "/static/css/main.51d615ec.chunk.css.map",
+    "static/js/2.b9445453.chunk.js.LICENSE.txt": "/static/js/2.b9445453.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.34037a1a.jpg",
     "static/media/2.jpg": "/static/media/2.762c8cd3.jpg",
     "static/media/3.jpg": "/static/media/3.f0a62712.jpg",
@@ -19,14 +19,13 @@
     "static/media/6to1_wood.png": "/static/media/6to1_wood.510cb6eb.png",
     "static/media/fam.jpg": "/static/media/fam.f68a73ab.jpg",
     "static/media/main.jpg": "/static/media/main.41d83c95.jpg",
-    "static/media/designs.css": "/static/media/test_grid_image1.c28550dc.jpg",
     "static/media/whitelogo.png": "/static/media/whitelogo.22ea7b8f.png",
     "static/media/home.css": "/static/media/wood-background.6ccd5e93.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b18c23f4.js",
-    "static/js/2.af4c8501.chunk.js",
-    "static/css/main.fefa8bee.chunk.css",
-    "static/js/main.2771f710.chunk.js"
+    "static/js/2.b9445453.chunk.js",
+    "static/css/main.51d615ec.chunk.css",
+    "static/js/main.f392ceaa.chunk.js"
   ]
 }
